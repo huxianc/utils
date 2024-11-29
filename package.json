@@ -1,0 +1,22 @@
+{
+  "name": "huxianc-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/huxianc-utils.cjs.js",
+  "module": "dist/huxianc-utils.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build"
+  },
+  "keywords": [
+    "huxianc",
+    "utils"
+  ],
+  "author": "huxianc",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
