@@ -1,0 +1,1 @@
+export const HEX_REGEX = /^#([a-f\d]{3}|[a-f\d]{6})$/i;

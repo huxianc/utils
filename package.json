@@ -1,6 +1,6 @@
 {
   "name": "huxianc-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "huxainc's utils project",
   "main": "dist/huxianc-utils.cjs.js",
   "module": "dist/huxianc-utils.es.js",
@@ -22,6 +22,7 @@
     "url": "git+https://github.com/huxianc/utils.git"
   },
   "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^5.7.2",
     "vite": "^6.0.1",
     "vite-plugin-dts": "^4.3.0"

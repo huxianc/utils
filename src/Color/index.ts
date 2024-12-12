@@ -1,1 +1,3 @@
-export * from "./hex2rgba";
+export * from "./hex";
+export * from "./rgb";
+export * from "./utils";
