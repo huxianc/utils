@@ -1,17 +1,13 @@
-import {
-  hex2rgba,
-  hex2RGB,
-  colorIsDark,
-  luminanace,
-  contrast,
-  darken,
-  lighten,
-} from "./src";
+import { formatBytes, UNITS } from "./src";
 
-console.log(hex2rgba("#Abc")); //
-console.log(hex2RGB("#abc")); // 1,234,567.89
-console.log(colorIsDark("#889")); // false
-console.log(luminanace(1, 1, 1)); // false
-console.log(contrast(["1", "2", "3"], [255, 255, 255])); // false
-console.log(darken("888888", 50)); // false
-console.log(lighten("#000000", 110)); // false
+console.log(formatBytes(1024));
+console.log(
+  formatBytes(
+    3.6 * 1024 * 1024,
+    UNITS.map((item) => `${item}B`)
+  )
+);
+
+console.log(formatBytes(7.56 * 1024 * 1024 * 1024, undefined, 4));
+
+console.log(formatBytes(6.15 * 1024 * 1024 * 1024 * 1024, undefined, 4, true));

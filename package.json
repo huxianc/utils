@@ -1,6 +1,6 @@
 {
   "name": "huxianc-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "huxainc's utils project",
   "main": "dist/huxianc-utils.cjs.js",
   "module": "dist/huxianc-utils.es.js",
