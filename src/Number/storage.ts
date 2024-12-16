@@ -1,4 +1,4 @@
-export const UNITS = ["B", "K", "M", "G", "T"];
+export const UNITS = ["B", "K", "M", "G", "T", "P", "E", "Z", "Y"];
 
 export interface FormatBytesReturns {
   numStr: string;
@@ -27,7 +27,7 @@ export function formatBytes(
 ): string | FormatBytesReturns {
   let unitIndex = 0;
 
-  while (bytes >= 1024 && unitIndex < 4) {
+  while (bytes >= 1024 && unitIndex < units.length - 1) {
     bytes /= 1024;
     unitIndex++;
   }
