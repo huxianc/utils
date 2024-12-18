@@ -15,7 +15,7 @@ export interface FormatBytesReturns {
  *
  * @example
  * formatBytes(1024); // 1.00K
- * formatBytes(3.6 * 1024 * 1024, UNITS.map((item) => `${item}B`); // 3.60MB
+ * formatBytes(3.6 * 1024 * 1024, UNITS.map((item) => `${item}B`)); // 3.60MB
  * formatBytes(7.56 * 1024 * 1024 * 1024, undefined, 4); // 7.5600G
  * formatBytes(6.15 * 1024 * 1024 * 1024 * 1024, undefined, 4, true); // { numStr: '6.1500', unit: 'T', raw: 6.15 }
  * */
